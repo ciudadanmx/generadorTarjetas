@@ -39,8 +39,8 @@ let generarTarjeta = (contacto) => {
     datos.forEach(linea => {
         let totalEspacios = anchoLinea - linea.length;
         //calcula la mitad y la mitad con sobrante para distribuir espacios al inicio y final de la línea y centrar
-        let espaciosStart = " ".repeat(Math.floor((totalEspacios / 2))); 
-        let espaciosEnd = " ".repeat(Math.ceil((totalEspacios / 2)));
+        let espaciosStart = " ".repeat(Math.floor(totalEspacios / 2)); 
+        let espaciosEnd = " ".repeat(Math.ceil(totalEspacios / 2));
         //en mis tiempos así centrábamos los títulos en la máquina de escribir lol
         //muestra en consola cada línea de la respectiva tarjeta
         console.log(`*${espaciosStart}${linea}${espaciosEnd}*`);
